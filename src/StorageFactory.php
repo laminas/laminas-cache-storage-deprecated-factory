@@ -28,7 +28,6 @@ use Webmozart\Assert\Assert;
 
 use function array_merge;
 use function class_exists;
-use function get_class;
 use function is_array;
 use function is_string;
 use function iterator_to_array;
@@ -142,7 +141,7 @@ final class StorageFactory
             if (! $adapter instanceof PluginAwareInterface) {
                 throw new Exception\RuntimeException(sprintf(
                     "The adapter '%s' doesn't implement '%s' and therefore can't handle plugins",
-                    get_class($adapter),
+                    $adapter::class,
                     PluginAwareInterface::class
                 ));
             }
