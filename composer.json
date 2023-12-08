@@ -4,7 +4,7 @@
     "description": "Temporary storage adapter factory for fluent migration to laminas-cache v3 when working with laminas components which depend on laminas-cache",
     "license": "BSD-3-Clause",
     "require": {
-        "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+        "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
         "laminas/laminas-cache": "^3.0",
         "laminas/laminas-servicemanager": "^3.7",
         "laminas/laminas-stdlib": "^3.6",
