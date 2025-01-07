@@ -229,7 +229,7 @@ final class StorageFactory
         Assert::isInstanceOf($adapterName, StorageInterface::class);
         $adapter = $adapterName;
 
-        if ($options) {
+        if ($options !== []) {
             $adapter->setOptions($options);
         }
 
@@ -308,7 +308,7 @@ final class StorageFactory
 
         $plugin = $pluginName;
 
-        if ($options) {
+        if ($options !== []) {
             if (! $options instanceof Storage\Plugin\PluginOptions) {
                 $options = new PluginOptions($options);
             }
